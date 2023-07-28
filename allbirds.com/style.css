@@ -1,0 +1,422 @@
+/* 
+
+title color: #ffffff
+title size: 4.8rem
+
+text color: #212A2F
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.flex-row {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.grid {
+  display: grid !important;
+}
+
+.margin-top {
+  margin-top: 4.8rem !important;
+}
+
+.padding-bottom {
+  padding-bottom: 12rem !important;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.section-title,
+.carousel-title {
+  font-size: 3.2rem;
+  padding: 0 4.8rem;
+  color: #212a2f;
+}
+
+.section-title {
+  margin-bottom: 1.8rem;
+}
+
+.carousel-title {
+  margin-bottom: 1.2rem;
+}
+
+.section-description {
+  font-size: 1.6rem;
+  color: #212a2f;
+  margin-bottom: 1.8rem;
+}
+
+.section {
+  margin-top: 4.8rem;
+  width: 65rem;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  align-items: center;
+}
+
+.transition {
+  width: 100%;
+}
+
+.buttons {
+  transition: transform 0.5s ease-out;
+  display: flex;
+  width: 38.4rem;
+  align-items: center;
+  gap: 20px;
+}
+
+.sml-btn {
+  background-color: #212a2f;
+  border: 2px solid #212a2f;
+  color: #ffffff;
+  padding: 13px 18px;
+  width: 100%;
+  transition: 0.5s;
+  font-family: "REM", san-serif;
+  font-weight: 700;
+  border-radius: 2px;
+  letter-spacing: 2px;
+}
+
+.sml-btn:hover {
+  background-color: #ffffff;
+  border: 2px solid #212a2f;
+  color: #212a2f;
+  cursor: pointer;
+}
+
+/* ^ ------------------------------- */
+/* / -------------Navbar------------ */
+/* ^ ------------------------------- */
+
+.nav-bar {
+  width: 100%;
+  height: 6rem;
+}
+.left {
+  flex: 4.98;
+  align-items: center;
+  gap: 5rem;
+  padding-left: 3rem;
+}
+#logo {
+  width: 12rem;
+  height: auto;
+  flex: 0 1 auto;
+}
+.right {
+  justify-content: end;
+  flex: 5;
+  align-items: center;
+  padding-right: 2.5rem;
+  gap: 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.75;
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+  color: #212a2f;
+}
+
+#sale {
+  color: #ad1f00;
+}
+
+.nav-item,
+.nav-item:visited {
+  color: black;
+}
+
+.svg-icon-nav {
+  display: flex;
+  align-items: end;
+}
+
+.svg-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* ^ ------------------------------- */
+/* / -------------Hero-------------- */
+/* ^ ------------------------------- */
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 6rem);
+  background-color: #171717;
+  align-items: center;
+  justify-content: center;
+  color: #e6e9ed;
+  position: relative;
+  background-image: url(imgs/hero\ page.jpg);
+  background-size: cover;
+  background-position-y: -100px;
+}
+
+.description {
+  text-align: center;
+}
+
+.hero-description {
+  margin-top: 1.8rem;
+}
+
+.shops {
+  position: absolute;
+  width: 384px;
+  left: 50%;
+  top: 80%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+}
+
+.shop-men-hero,
+.shop-women-hero {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #212a2f;
+  transition: transform 0.1s ease-out;
+}
+
+.shop-men-hero:hover,
+.shop-women-hero:hover {
+  color: #ffffff;
+  background-color: #212a2f;
+  transition: 0.1s;
+}
+
+#quiz {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  background-color: #212a2f;
+  width: 100%;
+  display: block;
+  font-family: "REM", san-serif;
+  color: #e6e9ed;
+}
+
+.hero-title,
+.hero-description {
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 4.8rem;
+}
+
+.hero-description {
+  font-size: 1.6rem;
+}
+
+/* ^ ------------------------------- */
+/* / -------------favorite---------- */
+/* ^ ------------------------------- */
+/* .svg-icon-favorite {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.man-shoes-img {
+  width: 39.6rem;
+  height: 39.6rem;
+} */
+
+.display {
+  opacity: 0;
+}
+
+/* ^ ------------------------------- */
+/* / -------transition 1 field------ */
+/* ^ ------------------------------- */
+
+.field {
+  width: 100%;
+  max-width: 134.9rem;
+  max-height: 54.2rem;
+  overflow: hidden;
+}
+
+/* ^ ------------------------------- */
+/* / ------summer styles------------ */
+/* ^ ------------------------------- */
+
+/* .summer-styles {
+  align-items: center;
+} */
+
+/* ^ ------------------------------- */
+/* / ------new arrivals/on sale----- */
+/* ^ ------------------------------- */
+
+.slider-container {
+  width: 100%;
+  height: 500px;
+  background-color: aquamarine;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  width: 400px;
+  height: 100%;
+  background-color: chocolate;
+
+  position: relative;
+}
+
+.img-container {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background-color: cornflowerblue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.img-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-img:hover {
+  transform: scale(1.2);
+}
+
+.slide-description {
+  padding: 1.8rem;
+  width: 100%;
+  height: calc((1 / 4) * 100%);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-description-title {
+  font-size: 2.2rem;
+  letter-spacing: 0.5;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.slide-description-text {
+  margin-top: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+/* ^ ------------------------------- */
+/* / ------transition--------------- */
+/* ^ ------------------------------- */
+
+.transition-photos-2 {
+  width: 100%;
+}
+
+.image-transition {
+  width: 674.5px;
+  height: 542px;
+}
+
+/* ^ ------------------------------- */
+/* / ------transition2-------------- */
+/* ^ ------------------------------- */
+
+.image-transition2 {
+  width: 100%;
+  height: 542px;
+  object-fit: cover;
+}
+
+/* ^ ------------------------------- */
+/* / ------featured-and-media------- */
+/* ^ ------------------------------- */
+
+.footer {
+  background-color: #212a2f;
+}
+
+.certification {
+  width: 120px;
+  height: 120px;
+}
+
+.svg-icon-media {
+  height: 18px;
+  width: 18px;
+}
+
+.svg-icon-flag {
+  height: 32px;
+  width: 47px;
+}
+
+/* ^ ------------------------------- */
+/* / ---------footer---------------- */
+/* ^ ------------------------------- */
+.input {
+  margin-bottom: 2.4rem;
+}
+
+.text-input {
+  width: 58rem;
+  height: 4.5rem;
+  border: none;
+  border-bottom: 2px solid #212a2f;
+}
